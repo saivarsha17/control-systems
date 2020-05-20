@@ -18,7 +18,7 @@ plt.plot(dout[:,0],dout[:,1])
 #if using termux
 plt.savefig('./figs/ee18btech11042/ee18btech11042.pdf')
 plt.savefig('./figs/ee18btech11042/ee18btech11042_1.eps')
-subprocess.run(shlex.split("termux-open ./figs/ee18btech11042/ee18btech11042_1.pdf"))
+subprocess.run(shlex.split("termux-open ./figs/ee18btech11042/ee18btech11042.pdf"))
 #else
 #plt.show()
 
