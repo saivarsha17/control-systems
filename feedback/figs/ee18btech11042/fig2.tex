@@ -1,0 +1,11 @@
+\begin{circuitikz}[american]
+
+
+    \ctikzset{tripoles/mos style/arrows}
+    \draw(0,0)--(0,-1) to [resistor,l = $R_1$,v>=$V_f$] (0,-2)--(0,-3);
+    \draw(0,-3) node[ground]{};
+    \draw(0,0)--(1,0) to [resistor,l = $R_2$](3,0)--(4,0);
+    \draw(4,0) node[circle,fill,inner sep = 2pt ,label = right:$V_o$]{};
+    
+    \draw (-2,0) to [short,i = \mbox{$I = 0$}] (0,0);
+    \end{circuitikz}
